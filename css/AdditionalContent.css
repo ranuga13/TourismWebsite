@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  padding: 0 100px;
+}
+
+.navbar {
+  width: 97%;
+  min-width: 510px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin: 0 30px;
+  padding: 5px 0;
+  color: white;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  width: 225px;
+}
+
+.nav-links a.active {
+  color: #45adea;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #45adea;
+  font-weight: bold;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+/* Back-to-top button */
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #45adea;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: medium;
+  padding: 10px;
+}
+#back-to-top-btn:hover {
+  background-color: #fff;
+  color: #45adea;
+}
+
+@media only screen and (max-width: 1150px) {
+  .menu {
+    /* top: 55px; */
+    display: block;
+  }
+  .navbar {
+    background-color: black;
+    opacity: 0.8;
+    padding: 0;
+    border-bottom: 3px solid;
+  }
+  .logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 200px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: black;
+    opacity: 0.8;
+    margin-top: -900px;
+  }
+  .nav-links li {
+    margin: 12px auto;
+  }
+  .nav-links.open {
+    margin-top: 0px;
+    transition: 0.5s;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/backgroundimg.jpg);
+  background-position: center;
+  background-size: cover;
+  min-width: 511px;
+}
+
+.col p {
+  font-size: 16px;
+}
+
+.box {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+.box p {
+  font-size: 16px;
+}
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col {
+  flex-basis: 50%;
+  margin-top: 155px;
+}
+
+.mainH1 {
+  color: aliceblue;
+  font-size: 100px;
+}
+
+.mainP {
+  color: aliceblue;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.card {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(../images/hotel.webp);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.7s;
+  vertical-align: top;
+}
+
+.card1 {
+  background-image: url(../images/travel-world.jpg);
+}
+.card2 {
+  background-image: url(../images/hotel.webp);
+}
+.card3 {
+  background-image: url(../images/hiking.webp);
+}
+.card4 {
+  background-image: url(../images/Mihintale_Sri_Lanka.jpg);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(230, 229, 229, 0.7);
+}
+
+.card h6 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 13px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.card:hover h6 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/*-----Reviews-----*/
+
+.Reviews {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/Beach.jpg);
+  background-position: center;
+  background-size: cover;
+  min-width: 511px;
+}
+
+.ReviewsH1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: -7%;
+  color: #fff;
+}
+
+.ReviewsP {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  color: #fff;
+}
+
+.Reviews-row {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.HotelsH2,
+.HotelsP {
+  color: #fff;
+}
+
+.Hotels {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.Hotel-col {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(../VHilton.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.7s;
+  vertical-align: top;
+}
+
+.col1 {
+  background-image: url(../images/Hilton.jpg);
+}
+.col2 {
+  background-image: url(../images/CinnamonGrand.png);
+}
+.col3 {
+  background-image: url(../images/Galadari.jpg);
+}
+.col4 {
+  background-image: url(../images/kingsbury.jpg);
+}
+
+.Hotel-col:hover {
+  transform: translateY(-10px);
+  background: rgba(230, 229, 229, 0.7);
+}
+
+.Hotel-col h6 {
+  width: 100%;
+  font-weight: 500;
+  color: black;
+  font-size: 13px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.Reviews-colP {
+  font-size: 11px;
+}
+
+.Hotel-col:hover h6 {
+  bottom: 49%;
+  opacity: 1;
+}
+/*-----Culture, History and Arts-----*/
+
+.history {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  min-width: 511px;
+}
+
+.historyH1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: -7%;
+  color: #fff;
+}
+
+.historyP {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  color: #fff;
+}
+
+.history-row {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.placesH2,
+.placesP {
+  color: #fff;
+}
+
+.places {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.places-col {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.7s;
+  vertical-align: top;
+}
+.col5 {
+  background-image: url(../images/Sigiriya.jpg);
+}
+.col6 {
+  background-image: url(../images/kandy.jpeg);
+}
+.col7 {
+  background-image: url(../images/ruwanwelisaya.jpg);
+}
+.col8 {
+  background-image: url(../images/ambakke.webp);
+}
+
+.places-col:hover {
+  transform: translateY(-10px);
+  background: rgba(230, 229, 229, 0.7);
+}
+
+.places-col h6 {
+  width: 100%;
+  font-weight: 500;
+  color: black;
+  font-size: 13px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.history-colP {
+  font-size: 11px;
+}
+
+.places-col:hover h6 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/*-----Travel news and trends-----*/
+
+.travel {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/news.jpg);
+  background-position: center;
+  background-size: cover;
+  min-width: 511px;
+}
+
+.travelH1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: -7%;
+  color: #fff;
+}
+
+.travelP {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  color: #fff;
+}
+
+.travel-row {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsH2,
+.newsP {
+  color: #fff;
+}
+
+.news {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.news-col {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(../images/news.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.7s;
+  vertical-align: top;
+}
+.col9 {
+  background-image: url(../images/MIIT_Show.jpg);
+}
+.col10 {
+  background-image: url(../images/RAID.jpeg);
+}
+.col11 {
+  background-image: url(../images/welcome.jpeg);
+}
+.col12 {
+  background-image: url(../images/german.jpg);
+}
+
+.news-col:hover {
+  transform: translateY(-10px);
+  background: rgba(230, 229, 229, 0.7);
+}
+
+.news-col h6 {
+  width: 100%;
+  font-weight: 500;
+  color: black;
+  font-size: 13px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.travel-colP {
+  font-size: 11px;
+}
+
+.news-col:hover h6 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/*-----Travel tips and advice-----*/
+
+.col13 {
+  background-image: url(../images/passport.jpg);
+}
+.col14 {
+  background-image: url(../images/cameras.webp);
+}
+.col15 {
+  background-image: url(../images/MedicalKit.jpg);
+}
+.col16 {
+  background-image: url(../images/maps.jpg);
+}
+
+.advice {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/StreetFood.webp);
+  background-position: center;
+  background-size: cover;
+  min-width: 511px;
+}
+
+/*---Footer---*/
+
+footer {
+  min-height: 150px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 390px;
+}
+
+.footer-nav .active {
+  color: #45adea;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  color: #45adea;
+  font-weight: bold;
+}
+.footer-nav li {
+  display: inline;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+footer h2 {
+  margin-top: 0;
+  padding: 20px 0;
+}
+
+footer p a {
+  color: #45adea;
+  font-size: 18px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: #45adea;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}

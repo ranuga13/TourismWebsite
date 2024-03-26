@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Island Escape</title>
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" href="css/commonStyle.css ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="images/lanka-transparent-blue.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="main.html"
+          ><img class="logo" src="images/IslandEscapeLogo-Final.png" alt="logo"
+        /></a>
+        
+        <ul class="nav-links">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="ShoppingCart.html">Shop</a></li>
+            <li><a href="form.html">Comments</a></li>
+            <li><a href="site map.html">Sitemap</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="StudentDetails.html">Details</a></li>
+            <li><a href="AdditionalContent.html">Explore</a></li>
+
+        </ul>
+        <img
+          src="images/menu-button-of-three-horizontal-lines-white.png" 
+          alt="menu"
+          class="menu"
+          id="menu-btn"
+          height="20px"
+        />
+      </nav>
+
+      <button id="back-to-top-btn">Back to top</button>
+    <h1>Gallery</h1>
+    <div class="option">
+       
+        <select name="colors" onchange="changeColor(this)">
+            <option value="white">white</option>
+            <option value="rgba(249, 214, 19, 0.941)">yellow</option>
+            <option value="rgba(160, 217, 252, 0.941)">blue</option>
+        </select>
+    </div>
+    
+    <div class="gallery">
+
+        <div class="image" data-name="p-1">
+            <img src="images/image-1.jpg" alt="Ella">
+        </div>
+
+        <div class="image" data-name="p-2">
+            <img src="images/image-2.jpg" alt="Galle Lighthouse">
+        </div>
+
+        <div class="image" data-name="p-3">
+            <img src="images/image-3.jpg" alt="Temple of Tooth">
+        </div>
+
+        <div class="image" data-name="p-4">
+            <img src="images/image-4.jpg" alt="Mirissa beach">
+        </div>
+
+        <div class="image" data-name="p-5">
+            <img src="images/image-5.jpg" alt="Sigiriya">
+        </div>
+
+        <div class="image" data-name="p-6">
+            <img src="images/image-6.jpg" alt="Adams Peak">
+        </div>
+
+        <div class="image" data-name="p-7">
+            <img src="images/image-7.jpg" alt="Yala National Park">
+        </div>
+
+        <div class="image" data-name="p-8">
+            <img src="images/image-8.jpg" alt="Nallur Kovil Jaffna">
+        </div>
+
+        <div class="image" data-name="p-9">
+            <img src="images/image-11.jpg" alt="Anuradhapura">
+        </div>
+
+    </div>
+
+
+    <div class="description-box">
+
+        <div class="card" data-target="p-1" id="card" onchange="changeColor(this)">
+            <div class="buttons">
+                <span class="btn" data-font-size="0.9em">A</span>
+                <span class="btn activated" data-font-size="1em">A</span>
+                <span class="btn" data-font-size="1.1em">A</span>
+            </div>
+
+            <i class="fas fa-times"></i>
+            <img src="images/image-1.jpg" alt="Ella">
+
+            <div class="text">
+                <h2>Ella</h2>
+
+                <p>Ella is a small town in the
+                    Badulla District of Uva Province,
+                    Sri Lanka governed by an Urban Council.
+                    It is approximately 200 kilometres 
+                    (120 mi) east of Colombo and is situated 
+                    at an elevation of 1,041 metres (3,415 ft)
+                    above sea level.[2] The area has a rich 
+                    bio-diversity, dense with numerous varieties 
+                    of flora and fauna. Ella is surrounded by 
+                    hills covered with cloud forests and tea 
+                    plantations. The town has a cooler climate 
+                    than surrounding lowlands, due to its
+                    elevation. The Ella Gap allows views 
+                    across the southern plains of Sri Lanka.</p>
+            </div>
+        </div>
+
+        <div class="card " data-target="p-2">
+            
+            <div class="buttons">
+                <span class="btn" data-font-size="0.9em">A</span>
+                <span class="btn activated" data-font-size="1em">A</span>
+                <span class="btn" data-font-size="1.1em">A</span>
+            </div>
+
+            <i class="fas fa-times"></i>
+            <img src="images/image-2.jpg" alt="Galle Lighthouse">
+            
+            <div class="text">
+                <h2>Galle Lighthouse</h2>
+                
+                <p>The Galle Lighthouse (also known as Pointe de Galle Light)
+                    is an onshore lighthouse in Galle, Sri Lanka and is operated and maintained 
+                    by the Sri Lanka Ports Authority. This is Sri Lanka's oldest light station.</p>
+                </div>
+            </div>
+
+        <div class="card " data-target="p-3">
+            
+            <div class="buttons">
+                <span class="btn" data-font-size="0.9em">A</span>
+                <span class="btn activated" data-font-size="1em">A</span>
+                <span class="btn" data-font-size="1.1em">A</span>
+            </div>
+
+            <i class="fas fa-times"></i>
+            <img src="images/image-3.jpg" alt="Temple of Tooth">
+
+            <div class="text">
+                <h2>Temple of Tooth</h2>
+                <p>The Temple of the Sacred Tooth Relic or Sri Dalada Maligawa,is a Buddhist temple
+                    in Kandy, Sri Lanka. It is located in the royal palace complex of the former 
+                    Kingdom of Kandy, which houses the relic of the tooth of the Buddha. Since ancient 
+                    times, the relic has played an important role in local politics because it is 
+                    believed that whoever holds the relic holds the governance of the country. The 
+                    relic was historically held by Sinhalese kings. The temple of the tooth is a World 
+                    Heritage Site mainly due to the temple and the relic.</p>
+            </div>
+        </div>
+
+        <div class="card " data-target="p-4">
+            
+            <div class="buttons">
+                <span class="btn" data-font-size="0.9em">A</span>
+                <span class="btn activated" data-font-size="1em">A</span>
+                <span class="btn" data-font-size="1.1em">A</span>
+            </div>
+
+            <i class="fas fa-times"></i>
+            <img src="images/image-4.jpg" alt="Mirissa beach">
+
+            <div class="text">
+            <h2>Mirissa Beach</h2>
+            
+            <p>Mirissa is the largest fishing port on the south coast and is known for its
+                 tuna, mullet, snapper, and butterfish. In 1980 the first tourist accommodation 
+                 was built, and in the mid-1990s tourism to the town started to increase dramatically.</p>
+        
+            </div>
+        </div>
+
+        <div class="card " data-target="p-5">
+            
+            <div class="buttons">
+                <span class="btn" data-font-size="0.9em">A</span>
+                <span class="btn activated" data-font-size="1em">A</span>
+                <span class="btn" data-font-size="1.1em">A</span>
+            </div>
+
+            <i class="fas fa-times"></i>
+            <img src="images/image-5.jpg" alt="Sigiriya">
+
+            <div class="text">
+            <h2>Sigiriya</h2>
+            
+            <p>Sigiriya or Sinhagiri is an ancient rock fortress located in the northern Matale 
+                District near the town of Dambulla in the Central Province, Sri Lanka.
+                 It is a site of historical and archaeological significance that is dominated 
+                 by a massive column of granite rock approximately 180 m (590 ft) high.</p>
+            </div>
+        </div>
+
+        <div class="card " data-target="p-6">
+            
+            <div class="buttons">
+                <span class="btn" data-font-size="0.9em">A</span>
+                <span class="btn activated" data-font-size="1em">A</span>
+                <span class="btn" data-font-size="1.1em">A</span>
+            </div>
+
+            <i class="fas fa-times"></i>
+            <img src="images/image-6.jpg" alt="Adams Peak">
+            <div class="text">
+            <h2>Adams Peak</h2>
+            
+            <p>Adam's Peak or Śrī Pāda is a 2,243 m (7,359 ft) tall conical sacred 
+                mountain located in central Sri Lanka.It is well known for the "Śrī Pāda", 
+                i.e., "sacred footprint", a 1.8 m (5 ft 11 in) rock formation near the 
+                summit. In Buddhist tradition the print is held to be the footprint of the Buddha,
+                 in Hindu tradition that of Hanuman or Shiva, "Mountain of Shiva's Light", and 
+                 in some Islamic and Christian traditions that of Adam, or that of St. Thomas.</p>
+            </div>
+        </div>
+
+        <div class="card " data-target="p-7">
+            
+            <div class="buttons">
+                <span class="btn" data-font-size="0.9em">A</span>
+                <span class="btn activated" data-font-size="1em">A</span>
+                <span class="btn" data-font-size="1.1em">A</span>
+            </div>
+
+            <i class="fas fa-times"></i>
+            <img src="images/image-7.jpg" alt="Yala National Park">
+            <div class="text">
+            <h2>Yala National Park</h2>
+            
+            <p>Yala was designated as a wildlife sanctuary in 1900, along with Wilpattu, designated
+                 in 1938 as one of the first two designated national parks in Sri Lanka. The 
+                 park is best known for its variety of wildlife. It is important conservation of 
+                 Sri Lankan elephants, Sri Lankan leopards and aquatic birds.</p>
+            </div>
+        </div>
+
+        <div class="card " data-target="p-8">
+            
+            <div class="buttons">
+                <span class="btn" data-font-size="0.9em">A</span>
+                <span class="btn activated" data-font-size="1em">A</span>
+                <span class="btn" data-font-size="1.1em">A</span>
+            </div>
+
+            <i class="fas fa-times"></i>
+            <img src="images/image-8.jpg" alt="Nallur Kovil Jaffna">
+            <div class="text">
+            <h2>Nallur Kovil Jaffna</h2>
+            
+            <p>The temple was originally founded in 948 AD. However, it reached fame 
+                when it was rebuilt in the 13th century by Puvaneka Vaahu, a minister
+                 of the Jaffna King Kalinga Maha. The Nallur Kandaswamy Temple was built for a third 
+                 time by Senpaha Perumal (a.k.a Sapumal Kumaraya) who was the adopted son of the Kotte king.</p>
+            </div>
+        </div>
+
+        <div class="card " data-target="p-9">
+            
+            <div class="buttons">
+                <span class="btn" data-font-size="0.9em">A</span>
+                <span class="btn activated" data-font-size="1em">A</span>
+                <span class="btn" data-font-size="1.1em">A</span>
+            </div>
+
+            <i class="fas fa-times"></i>
+            <img src="images/image-11.jpg" alt="Anuradhapura">
+            <div class="text">
+            <h2>Anuradhapura</h2>
+            
+            <p>Anuradhapura is a major city located in north central plain of Sri Lanka. It is the capital
+                 city of North Central Province, Sri Lanka and the capital of Anuradhapura District. The
+                  city lies 205 km (127 mi) north of the current capital of Colombo in the North Central 
+                  Province, on the banks of the historic Malvathu River. The city is now a World Heritage 
+                  Site famous for its well-preserved ruins of the ancient Sinhalese civilization.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br>
+        <p><a href="Page Editor-Buddhima.html">Edited by Buddhima Fernando</a></p>
+        <ul class="social_icon">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtube.com/" target="_blank">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://web.whatsapp.com/" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <span class="footer-nav">
+            <li><a href="main.html">Home</a></li>
+            &nbsp;| &nbsp;
+            <li><a href="quiz.html">Quiz</a></li>
+            &nbsp;| &nbsp;
+            <li><a href="ShoppingCart.html">Shop</a></li>
+            &nbsp;| &nbsp;
+            <li><a href="form.html">Comments</a></li>
+            &nbsp;| &nbsp;
+            <li><a href="site map.html">Sitemap</a></li>
+            &nbsp;| &nbsp;
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            &nbsp;| &nbsp;
+            <li><a href="StudentDetails.html">Details</a></li>
+            &nbsp;| &nbsp;
+            <li><a href="AdditionalContent.html">Explore</a></li>
+         
+        </span>
+        <p>EscapeIsland, Copyright &copy; 2023</p>
+    </footer>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

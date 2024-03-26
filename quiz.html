@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/lanka-transparent-blue.png"
+    />
+
+    <title>Quiz - Island Escape</title>
+    <link rel="stylesheet" href="css/quiz.css" />
+    <link rel="stylesheet" href="css/commonStyle.css " />
+  </head>
+  <body>
+    <video autoplay muted loop class="backvideo">
+      <source src="videos/Quiz video.mp4" type="video/mp4" />
+    </video>
+    <nav class="navbar">
+      <a href="main.html"
+        ><img class="logo" src="images/IslandEscapeLogo-Final.png" alt="logo"
+      /></a>
+
+      <ul class="nav-links">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="ShoppingCart.html">Shop</a></li>
+        <li><a href="form.html">Comments</a></li>
+        <li><a href="site map.html">Sitemap</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="StudentDetails.html">Details</a></li>
+        <li><a href="AdditionalContent.html">Explore</a></li>
+      </ul>
+      <img
+        src="images/menu-button-of-three-horizontal-lines-white.png"
+        alt="menu"
+        class="menu"
+        id="menu-btn"
+        height="20px"
+      />
+    </nav>
+
+    <div class="showcase"></div>
+    <br />
+    <br />
+    <button id="back-to-top-btn">Back to top</button>
+    <div id="mydiv" style="display: none">
+      <h1>Quiz on Important Facts</h1>
+      <br />
+      <div id="timer">Timer : <span id="time"></span> seconds</div>
+      <div id="quizNumber">Question: <span id="qnum"></span> /10</div>
+      <div class="quiz-container">
+        <div id="quiz"></div>
+      </div>
+      <br />
+      <br />
+      <button id="previous">Previous Question</button>
+      <button id="next">Next Question</button>
+      <button id="submit">Submit Quiz</button>
+      <button id="showResults" style="display: none">Show Results</button>
+      <div id="results"></div>
+    </div>
+
+    <div id="quiz-info" class="quiz-info">
+      <br />
+      <h2 class="Instructions-head">Quiz Instructions !</h2>
+      <br />
+
+      <ul>
+        <li>This Quiz contains 10 questions.</li>
+        <li>You will score <b>2 marks </b> for each correct answer.</li>
+        <li>You will lose <b>1 mark </b>for each incorrect answer.</li>
+        <li>Final result will be displayed at the end of the quiz.</li>
+        <li>You have <b>1 minute</b> to complete the quiz.</li>
+      </ul>
+
+      <br />
+
+      <!-- Start Quiz Button -->
+      <input
+        type="button"
+        value="Start Quiz!"
+        id="start"
+        class="start-btn"
+        onclick="start (); myFunction(); timer(); "
+      />
+    </div>
+
+    <script src="js/quiz.js"></script>
+    <footer>
+      <p>
+        <a href="Page Editor-Tharusha.html">Edited by Tharusha Kulasinghe</a>
+      </p>
+      <ul class="social_icon">
+        <li>
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com/" target="_blank">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <span class="footer-nav">
+        <li><a href="main.html">Home</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="ShoppingCart.html">Shop</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="form.html">Comments</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="site map.html">Sitemap</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="gallery.html">Gallery</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="StudentDetails.html">Details</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="AdditionalContent.html">Explore</a></li>
+      </span>
+      <p>EscapeIsland, Copyright &copy; 2023</p>
+    </footer>
+  </body>
+</html>

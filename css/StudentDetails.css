@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, black, #45adea);
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 97.39%;
+  min-width: 330px;
+  z-index: 999;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin: 0 30px;
+  padding: 5px 0;
+  color: white;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  width: 225px;
+}
+
+.nav-links a.active {
+  color: #45adea;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #45adea;
+  font-weight: bold;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1150px) {
+  .menu {
+    /* top: 55px; */
+    display: block;
+  }
+  .navbar {
+    background-color: black;
+    opacity: 0.8;
+    padding: 0;
+    border-bottom: 3px solid;
+  }
+  .logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 200px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: black;
+    opacity: 0.8;
+    margin-top: -900px;
+  }
+  .nav-links li {
+    margin: 12px auto;
+  }
+  .nav-links.open {
+    margin-top: 0px;
+    transition: 0.5s;
+  }
+}
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #45adea;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: x-large;
+  padding: 5px 10px 5px 10px;
+}
+
+#back-to-top-btn:hover {
+  background-color: #fff;
+  color: #45adea;
+}
+
+/* Heading styles */
+h1,
+h3 {
+  text-align: center;
+  color: black;
+}
+
+.title {
+  margin-top: 100px;
+  color: #fff;
+}
+
+.header {
+  color: #fff;
+  font-size: 22px;
+}
+/* Styling section where team members are displayed  */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 96px;
+  position: relative;
+  margin: 40px 0;
+  color: #ffeb00;
+}
+
+/* Styling each team member card displayed */
+.card {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  background: #28282b;
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling content within the team member card (Image of Student and Details) */
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Student name and Student role styling. */
+.content-box p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 20px 0 10px;
+  opacity: 0;
+}
+
+/* Style to display student details when mouse hovered over the card of that team member */
+.card:hover .content-box p {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* Styling team member images */
+.img-box {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+footer {
+  min-height: 150px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  margin: 0px -8px 0px;
+  min-width: 390px;
+  margin-bottom: -8px;
+}
+
+.footer-nav .active {
+  color: #45adea;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  color: #45adea;
+  font-weight: bold;
+}
+
+.footer-nav li {
+  display: inline;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+footer h2 {
+  margin-top: 0;
+  padding: 20px 0;
+}
+
+footer p a {
+  color: #45adea;
+  font-size: 18px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: #45adea;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}

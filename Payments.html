@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment - Island Escape</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/Payments.css" />
+    <link rel="stylesheet" href="css/commonStyle.css " />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/lanka-transparent-blue.png"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="main.html"
+        ><img class="logo" src="images/IslandEscapeLogo-Final.png" alt="logo"
+      /></a>
+
+      <ul class="nav-links">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="ShoppingCart.html" class="active">Shop</a></li>
+        <li><a href="form.html">Comments</a></li>
+        <li><a href="site map.html">Sitemap</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="StudentDetails.html">Details</a></li>
+        <li><a href="AdditionalContent.html">Explore</a></li>
+      </ul>
+      <img
+        src="images/menu-button-of-three-horizontal-lines-white.png"
+        alt="menu"
+        class="menu"
+        id="menu-btn"
+        height="20px"
+      />
+    </nav>
+    <br /><br /><br />
+    <div class="main" id="paymentForm">
+      <button id="back-to-top-btn">Back to top</button>
+      <form id="form" class="form">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">Billing Address</h3>
+            <div class="inputbox">
+              <label for="fullName"><span>Full Name </span></label>
+              <input
+                type="text"
+                placeholder="Enter your full name"
+                name="fullName"
+                id="fullName"
+              />
+              <i class="bi bi-check-circle-fill"></i>
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="inputbox">
+              <label for="email"><span>Email </span></label>
+              <input
+                type="email"
+                placeholder="example@example.com"
+                name="email"
+                id="email"
+              />
+              <i class="bi bi-check-circle-fill"></i>
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="inputbox">
+              <label for="address"><span>Address </span></label>
+              <input
+                type="text"
+                placeholder="no - street - locality"
+                name="address"
+                id="address"
+              />
+              <i class="bi bi-check-circle-fill"></i>
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="inputbox">
+              <label for="city"><span>City </span></label>
+              <input type="text" placeholder="Colombo" name="city" id="city" />
+              <i class="bi bi-check-circle-fill"></i>
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="inputbox">
+              <label for="country"><span>Country </span></label>
+              <input
+                type="text"
+                placeholder="Sri Lanka"
+                name="country"
+                id="country"
+              />
+              <i class="bi bi-check-circle-fill"></i>
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="inputbox">
+              <label for="zipCode"><span>Zip Code </span></label>
+              <input
+                type="text"
+                placeholder="123 456"
+                name="zipCode"
+                id="zipCode"
+              />
+              <i class="bi bi-check-circle-fill"></i>
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <p>Error Message</p>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="title">Payment</h3>
+            <div class="inputbox">
+              <label for="nameOnCard"><span>Name on card </span></label>
+              <input
+                type="text"
+                placeholder="Mr.John Brown"
+                name="nameOnCard"
+                id="nameOnCard"
+              />
+              <i class="bi bi-check-circle-fill"></i>
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="inputbox">
+              <span>Cards Accepted </span>
+              <img src="images/card_img.png" alt="image" />
+            </div>
+            <div class="inputbox">
+              <label for="creditCardNumber"
+                ><span>Credit Card Number </span></label
+              >
+              <input
+                type="text"
+                placeholder="1111-2222-3333-4444"
+                name="creditCardNumber"
+                id="creditCardNumber"
+              />
+              <i class="bi bi-check-circle-fill"></i>
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="inputbox">
+              <label for="expMonth"><span>Exp month </span></label>
+              <input
+                type="text"
+                placeholder="January"
+                name="expMonth"
+                id="expMonth"
+              />
+              <i class="bi bi-check-circle-fill"></i>
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="inputbox">
+              <label for="expYear"><span>Exp Year </span></label>
+              <input
+                type="text"
+                placeholder="2023"
+                name="expYear"
+                id="expYear"
+              />
+              <i class="bi bi-check-circle-fill"></i>
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="inputbox">
+              <label for="cvv"><span>CVV </span></label>
+              <input type="text" placeholder="123" name="cvv" id="cvv" />
+              <i class="bi bi-check-circle-fill"></i>
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <p>Error Message</p>
+            </div>
+          </div>
+        </div>
+        <button type="submit" id="submit">Place Your Order</button>
+        <button onclick="printInvoice()">Print Invoice</button>
+      </form>
+    </div>
+    <footer>
+      <p><a href="Page Editor-Disara.html">Edited by DIsara Kannangara</a></p>
+      <ul class="social_icon">
+        <li>
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com/" target="_blank">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <span class="footer-nav">
+        <li><a href="main.html">Home</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="quiz.html">Quiz</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="ShoppingCart.html" class="active">Shop</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="form.html">Comments</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="site map.html">Sitemap</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="gallery.html">Gallery</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="StudentDetails.html">Details</a></li>
+        &nbsp;| &nbsp;
+        <li><a href="AdditionalContent.html">Explore</a></li>
+      </span>
+      <p>EscapeIsland, Copyright &copy; 2023</p>
+    </footer>
+    <script src="js/Payments.js"></script>
+  </body>
+</html>

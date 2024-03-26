@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100;200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Showcase section */
+
+.showcase {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  min-width: 560px;
+}
+
+.showcase-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 12vw;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  z-index: 1;
+}
+
+.backvideo {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  min-width: 560px;
+  z-index: 999;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin: 0 30px;
+  padding: 5px 0;
+  color: white;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  width: 225px;
+}
+
+.nav-links a.active {
+  color: #45adea;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #45adea;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+/* Back-to-top button */
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #45adea;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: medium;
+  padding: 10px;
+}
+#back-to-top-btn:hover {
+  background-color: #fff;
+  color: #45adea;
+}
+
+/* About Sri Lanka section */
+.heading1 {
+  color: #45adea;
+  font-size: 50px;
+  text-align: center;
+}
+
+.about-srilanka {
+  padding: 30px;
+  min-width: 560px;
+}
+
+.about-srilanka {
+  margin: 20px 50px;
+}
+
+.about-srilanka p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.read-more-text {
+  display: none;
+}
+
+.read-more-text.show {
+  /* display: inline; */
+  display: block;
+}
+
+.read-more-btn {
+  color: #45adea;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Top destinations section */
+.destination {
+  margin: 20px;
+  min-width: 560px;
+}
+
+.destination-content {
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin: 3rem 0;
+  min-width: 560px;
+}
+
+.col-content {
+  position: relative;
+}
+.col-content img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  filter: brightness(80%);
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  will-change: filter;
+}
+
+.col-content h3 {
+  position: absolute;
+  font-size: 22px;
+  font-weight: 1000;
+  color: white;
+  left: 15px;
+  bottom: 60px;
+}
+
+.col-content p {
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  left: 15px;
+  bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.col-content img:hover {
+  filter: brightness(100%) hue-rotate(20deg);
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.box {
+  float: left;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px;
+  /* background-color: #f2f2f2; */
+  /* border: 1px solid #ddd; */
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px #ddd;
+  overflow: hidden;
+}
+
+/* Adventure ideas section */
+.adventure {
+  margin: 20px;
+  min-width: 560px;
+}
+
+.activities {
+  margin-top: 20px;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+.box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  filter: brightness(80%);
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  will-change: filter;
+}
+
+.box img:hover {
+  filter: brightness(100%) hue-rotate(20deg);
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.box h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+}
+
+.box p {
+  font-size: 16px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  min-height: 150px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  min-width: 560px;
+}
+
+.footer-nav .active {
+  color: #45adea;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  color: #45adea;
+  font-weight: bold;
+}
+
+.footer-nav li {
+  display: inline;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+footer h2 {
+  margin-top: 0;
+  padding: 20px 0;
+}
+
+footer p a {
+  color: #45adea;
+  font-size: 18px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: #45adea;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1150px) {
+  .menu {
+    /* top: 55px; */
+    display: block;
+  }
+  .navbar {
+    background-color: black;
+    opacity: 0.8;
+    padding: 0;
+    border-bottom: 3px solid;
+  }
+  .logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 200px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: black;
+    opacity: 0.8;
+    margin-top: -900px;
+  }
+  .nav-links li {
+    margin: 12px auto;
+  }
+  .nav-links.open {
+    margin-top: 0px;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    margin: 20px;
+  }
+
+  .box img {
+    width: 100%;
+  }
+}
+
+/* For screens smaller than 768px (e.g. smartphones) */
+@media (max-width: 767px) {
+  .heading1 {
+    font-size: 36px;
+  }
+
+  .about-srilanka {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .about-srilanka p {
+    font-size: 24px;
+  }
+
+  .read-more-btn {
+    font-size: 16px;
+  }
+
+  .showcase-text {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .showcase-text {
+    font-size: 10vw;
+  }
+}
